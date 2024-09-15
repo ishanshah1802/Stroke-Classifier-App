@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dashboard"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/nav_your_profile"
+        android:title="View Your Profile" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="View Patient Profiles" />
+    <item
+        android:id="@+id/nav_appointments"
+        android:title="Schedule And Manage Appointments" />
+    <item
+        android:id="@+id/nav_precautions"
+        android:title="Precautions" />
+    <item
+        android:id="@+id/nav_classify"
+        android:title="Classify the Stroke" />
+    <item
+        android:id="@+id/nav_feedback"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/nav_help"
+        android:title="Help"
+        android:icon="@drawable/ic_help"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:layout_gravity="bottom" />
+</menu>

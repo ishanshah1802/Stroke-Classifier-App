@@ -1,1 +1,1 @@
-# Stroke-Classifier-App
+This is our Android Project.

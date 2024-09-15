@@ -1,0 +1,55 @@
+@startuml
+
+class WelcomeActivity {
+    +void onCreate(Bundle savedInstanceState)
+    +void onCreateAccountButtonClick(View view)
+    +void onLoginButtonClick(View view)
+}
+
+class UserRegistrationActivity {
+    -EditText firstNameEditText
+    -EditText lastNameEditText
+    -EditText birthdateEditText
+    -EditText emailEditText
+    -EditText passwordEditText
+    -EditText confirmPasswordEditText
+    -Spinner genderSpinner
+    -Button registerButton
+    -FirebaseAuth mAuth
+    -ProgressBar progressBar
+    +void onStart()
+    +void onCreate(Bundle savedInstanceState)
+    -void navigateToClassifier()
+}
+
+class MainActivity {
+    -EditText usernameEditText
+    -EditText passwordEditText
+    -Button loginButton
+    -FirebaseAuth mAuth
+    -ProgressBar progressBar
+    +void onStart()
+    +void onCreate(Bundle savedInstanceState)
+    -void navigateToClassifier()
+}
+
+class Classifier_Activity {
+    -ImageView ivMedicalImage
+    -TextView tvResult
+    -TextView tvConfidence
+    -Button btnUpload
+    -FirebaseAuth auth
+    -FirebaseUser user
+    -Button button
+    +void onCreate(Bundle savedInstanceState)
+    +void onActivityResult(int requestCode, int resultCode, Intent data)
+    -void simulateClassificationResult()
+}
+
+WelcomeActivity --> UserRegistrationActivity : navigates to
+WelcomeActivity --> MainActivity : navigates to
+UserRegistrationActivity --> Classifier_Activity : navigates to
+MainActivity --> Classifier_Activity : navigates to
+Classifier_Activity --> MainActivity : navigates to
+
+@enduml

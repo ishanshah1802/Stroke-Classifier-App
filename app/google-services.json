@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "332643925413",
+    "project_id": "stroke-classifier-app",
+    "storage_bucket": "stroke-classifier-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332643925413:android:c1f4695eb58b18be383c4c",
+        "android_client_info": {
+          "package_name": "com.example.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAjJ4H2aFrwLX6q8hZZe8_exKB6KQEVMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
